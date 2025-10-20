@@ -1,15 +1,28 @@
-/* Root typography settings */
-html{
+ @import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');/* Root typography settings */
+
+  /* font-family: "Playfair Display SC", serif;
+  font-family: "Source Code Pro", monospace; */
+ html{
+
 /*   set the following properties: 
   font-size - this will be the base font size for the site
   font-family - this will be the base font-family for the site
   line-height - base line height, generally should be in the range 1.5-1.8 
   color- primary text color for the site
   background-color - primary background color for the site */
-
+ font-family: "Playfair Display SC", serif;
+font-size: 20px;
+color: #ededed;
+line-height: 1.6;
   
 }
+body{
+background-color: #64B2BC;
+width: 70ch;
+margin-left: auto;
+margin-right: auto;
 
+}
 /* General heading styles */
 h1, h2, h3, h4, h5, h6{
   set font styles for all of your headings, for example font-weight, line-height, font-family
@@ -17,14 +30,68 @@ h1, h2, h3, h4, h5, h6{
 
 /* Specific element text styles */
 h1{
+  
   /*   this is the page title */
+  font-family: "Source Code Pro", monospace;
+  font-weight 400;
 }
 
 h2{
   
+font-weight: 900;
+
 }
 
 p{
 
   margin-bottom: 1rem; /* optional but usually good to have a space between paragraphs */
 }
+
+a{
+  color: #036C7C;
+}
+a:hover{
+  color: rgb(16, 37, 155);
+}
+a:visited{
+
+  color: rgb(35, 9, 150);
+}
+
+/* -------------  Header styles ------------------------- */
+header {
+  display: flex;
+  justify-content: space-between; /* site title left, nav right */
+  align-items: center;           /* vertical centering */
+  padding: 1rem;
+}
+
+/* Styles the site title at the top of the header */
+.site-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;   /* remove bullets */
+  margin: 0;
+  padding: 0;
+  display: flex;      /* horizontal layout for links */
+  gap: 1rem;          /* space between items */
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: rgb(16, 37, 155); /* hover color */
+}
+
+nav a:visited {
+  color: rgb(77, 12, 228); /* hover color */
+}
+
+/* ------------- END Header styles  */
